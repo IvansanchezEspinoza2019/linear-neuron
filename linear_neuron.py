@@ -21,14 +21,14 @@ class LinearNeuron:
     def fit(self, X, Y, solver='SGD', epochs=100):      # train the neuron
         p = X.shape[1]              # patterns
         
-        if solver == 'SGD':         # STOCASTIC GRADIENT DESCEND
+        if solver == 'SGD':         # STOCHASTIC GRADIENT DESCENT
             for _ in range(epochs):
                 for i in range(p):
                     y_pred = self.predict(X[:, i])
                     self.w += self.eta * (Y[:, i] - y_pred) * X[:, i]
                     self.b += self.eta * (Y[:, i] - y_pred)
                     
-        elif solver == 'BGD':     # BATCH GRADIENT DESCEND
+        elif solver == 'BGD':     # BATCH GRADIENT DESCENT
             for _ in range(epochs):
                 Y_pred = np.dot(self.w, X) + self.b
                 self.w += (self.eta/p) * np.dot((Y - Y_pred), X.T).ravel()

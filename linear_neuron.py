@@ -1,4 +1,3 @@
-import numpy as np;
 """
     This neuron it's a modification of the classic perceptron. The  per-
     ceptron only do binaries classifications, meanwhile this neuron do 
@@ -7,7 +6,7 @@ import numpy as np;
     unction to make a continuos output.'
 """
 
-import matplotlib.pyplot as plt
+import numpy as np
 
 class LinearNeuron:
     def __init__(self, n_dim, learn_fact):

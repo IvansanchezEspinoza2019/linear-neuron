@@ -1,9 +1,9 @@
 """
-    This neuron it's a modification of the classic perceptron. The  per-
-    ceptron only do binaries classifications, meanwhile this neuron do 
-    linear regression. This is because the preceptron has an activation
-    function that makes discret outputs, the linear neuron delets this f-
-    unction to make a continuos output.'
+    This neuron called ADALINE it's a modification of the classic perceptron. 
+    The  perceptron only do binaries classifications, meanwhile this neuron do 
+    linear regression. This is because the preceptron has an activation funct-
+    ion that makes discret outputs, this linear neuron modifies this function to
+    make a continuos output.
 """
 
 import numpy as np
